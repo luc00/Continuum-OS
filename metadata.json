@@ -1,0 +1,6 @@
+{
+  "name": "Continuum Work OS",
+  "description": "Unified cognitive workspace featuring ContextFlow, AsyncSync, SkillMesh, and ProofGuard for seamless work continuity, async video comms, hidden skill discovery, and real-time source validation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

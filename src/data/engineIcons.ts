@@ -1,0 +1,130 @@
+import React from 'react';
+import { SuiteCategory, SuiteTab } from '../types';
+import {
+  Activity,
+  Archive,
+  Award,
+  BatteryCharging,
+  Bot,
+  Briefcase,
+  Building2,
+  Clock,
+  Compass,
+  Cpu,
+  Eye,
+  FileCheck2,
+  FlaskConical,
+  GitFork,
+  Globe2,
+  Handshake,
+  Headphones,
+  HeartPulse,
+  Inbox,
+  Layers,
+  Lock,
+  Megaphone,
+  Mic,
+  Network,
+  Package,
+  Radar,
+  Repeat,
+  Scale,
+  ShieldAlert,
+  ShieldCheck,
+  Sliders,
+  Sparkles,
+  Tag,
+  TrendingUp,
+  Users,
+  Video,
+  Wind,
+} from 'lucide-react';
+
+export const ENGINE_ICON_MAP: Record<
+  Exclude<SuiteTab, 'overview'>,
+  React.ComponentType<{ className?: string }>
+> = {
+  contextflow: Compass,
+  shadowself: Bot,
+  chronosculptor: Clock,
+  zeroui: Sliders,
+  tabzero: Mic,
+  inboxzero: Inbox,
+  asyncsync: Video,
+  skillmesh: Network,
+  burnoutradar: HeartPulse,
+  biocapital: BatteryCharging,
+  cultureos: Activity,
+  meetingskipper: Headphones,
+  legacybridge: GitFork,
+  talentmatrix: Cpu,
+  outcomemarket: Package,
+  swarmlabs: FlaskConical,
+  patentforge: Award,
+  oneclickbureaucracy: FileCheck2,
+  customerdna: Layers,
+  competitorxray: Eye,
+  ghostagency: Megaphone,
+  pricemorph: Tag,
+  pivotengine: Sparkles,
+  microfranchise: Building2,
+  negotiatezero: Handshake,
+  trustescrow: Lock,
+  liquidcash: TrendingUp,
+  supplypulse: Globe2,
+  mergermatch: Briefcase,
+  autofollowup: Repeat,
+  futurecast: Wind,
+  nexusgov: Scale,
+  boardroom: Users,
+  decisionledger: Archive,
+  proofguard: ShieldCheck,
+  zeroleak: ShieldAlert,
+  reputationshield: Radar,
+};
+
+export interface PillarVisualStyle {
+  iconBg: string;
+  accentText: string;
+  borderTint: string;
+  dotColor: string;
+}
+
+export const PILLAR_STYLE_MAP: Record<SuiteCategory, PillarVisualStyle> = {
+  autonomy: {
+    iconBg: 'from-blue-500/20 to-indigo-500/20 border-blue-500/30 text-blue-300',
+    accentText: 'text-indigo-300',
+    borderTint: 'border-indigo-500/30',
+    dotColor: 'bg-indigo-400',
+  },
+  people: {
+    iconBg: 'from-violet-500/20 to-purple-500/20 border-violet-500/30 text-violet-300',
+    accentText: 'text-violet-300',
+    borderTint: 'border-violet-500/30',
+    dotColor: 'bg-violet-400',
+  },
+  execution: {
+    iconBg: 'from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-300',
+    accentText: 'text-amber-300',
+    borderTint: 'border-amber-500/30',
+    dotColor: 'bg-amber-400',
+  },
+  market: {
+    iconBg: 'from-cyan-500/20 to-sky-500/20 border-cyan-500/30 text-cyan-300',
+    accentText: 'text-cyan-300',
+    borderTint: 'border-cyan-500/30',
+    dotColor: 'bg-cyan-400',
+  },
+  finance: {
+    iconBg: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-300',
+    accentText: 'text-emerald-300',
+    borderTint: 'border-emerald-500/30',
+    dotColor: 'bg-emerald-400',
+  },
+  governance: {
+    iconBg: 'from-rose-500/20 to-red-500/20 border-rose-500/30 text-rose-300',
+    accentText: 'text-rose-300',
+    borderTint: 'border-rose-500/30',
+    dotColor: 'bg-rose-400',
+  },
+};
